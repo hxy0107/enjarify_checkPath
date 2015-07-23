@@ -8,6 +8,10 @@ public class HasPac {
     public static final String FILE_BASE="D:"+ File.separator+"temp";
     public static final String PAC_NAME="com"+File.separator+"alipay"+File.separator+"android"+File.separator+"app"+File.separator+"pay";
     public static final String PAC_NAME1="com"+File.separator+"alipay";
+
+    public static final String BASE_FOLDER="com"+File.separator+"alipay"+File.separator+"sdk"+File.separator+"cons";
+    public static final String GLOBALCONSTANTS=BASE_FOLDER+File.separator+"GlobalConstants.class";
+    public static final String OUTPUT_FILE=BASE_FOLDER+File.separator+"GlobalConstantsHXY.txt";
     public static ArrayList<String> appList;
     public static ArrayList<String> pacPath;
     public static boolean isContain=false;

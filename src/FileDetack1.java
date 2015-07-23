@@ -13,15 +13,14 @@ import java.util.jar.JarInputStream;
 /**
  * Created by xianyu.hxy on 2015/7/13.
  */
-public class FileDetack {
-    public static final String FILE_BASE="e:"+ File.separator+"temp";
+public class FileDetack1 {
+    public static final String FILE_BASE="e:"+ File.separator+"temp1";
 
     public static void main(String[] args){
 
-        File file=new File(FILE_BASE);
-        if (file.exists()&&file.isDirectory()){
-            File[] files=file.listFiles();
-            for(File f:files){
+        File f=new File(FILE_BASE);
+
+
                 if(f.exists()&&f.isDirectory()){
                     File[] jarFiles=f.listFiles();
                     for(File jarFile:jarFiles ){
@@ -39,6 +38,6 @@ public class FileDetack {
                     }
                 }
             }
-        }
-    }
+
+
 }

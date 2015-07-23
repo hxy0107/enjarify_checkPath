@@ -5,7 +5,7 @@ import java.io.InputStream;
 /**
  * Created by xianyu.hxy on 2015/7/13.
  */
-public class InvokeBat {
+public class InvokeBat1 {
     public void runbat(String batName){
         try {
             Process ps=Runtime.getRuntime().exec(batName);
@@ -68,12 +68,10 @@ public class InvokeBat {
         System.out.println("finish:"+(end-start)/1000+" s");*/
 
 
-        File file=new File("e:"+File.separator+"temp");
+        File file=new File("e:"+File.separator+"temp1");
         if(file.exists()&&file.isDirectory()){
-            File[] subFile=file.listFiles();
-            for(File f:subFile){
-                if(f.exists()&&f.isDirectory()){
-                    File[] appFile=f.listFiles();
+            File[] appFile=file.listFiles();
+
                     for(File app:appFile){
                         if(app.exists()&&app.isFile()&&app.length()>5000){
                             String Path=app.getAbsolutePath();
@@ -87,6 +85,6 @@ public class InvokeBat {
                     }
                 }
             }
-        }
-    }
+
+
 }
